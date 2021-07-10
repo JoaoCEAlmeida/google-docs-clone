@@ -1,15 +1,21 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import NewDocumentSection from "../components/NewDocumentSection";
+import DocumentsSection from "../components/DocumentsSection";
 
-export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>Google Docs Clone</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+const Home = () => (
+  <div>
+    <Head>
+      <title>Google Docs Clone</title>
+      <link rel="icon" href="/favicon.png" />
+    </Head>
 
-      <Header />
-    </div>
-  );
-}
+    <Header />
+
+    <NewDocumentSection />
+
+    <DocumentsSection />
+  </div>
+);
+
+export default Home;
