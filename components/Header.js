@@ -12,7 +12,7 @@ const Header = () => {
         rounded
         iconOnly
         ripple="dark"
-        className="hidden md:inline-flex h-20 w-20 border-0"
+        className="hidden md:inline-flex h-20 w-20 !border-0"
       >
         <Icon name="menu" size="3xl" />
       </Button>
@@ -22,7 +22,7 @@ const Header = () => {
         rounded
         iconOnly
         ripple="dark"
-        className="hidden md:inline-flex h-20 w-20 border-0"
+        className="hidden md:inline-flex h-20 w-20 !border-0"
       >
         <Icon name="description" size="5xl" color="blue" />
       </Button>
@@ -43,7 +43,7 @@ const Header = () => {
         rounded
         iconOnly
         ripple="dark"
-        className="hidden md:inline-flex ml-5 md:ml-20 h-20 w-20 border-0"
+        className="hidden md:inline-flex ml-5 md:ml-20 h-20 w-20 !border-0"
       >
         <Icon name="apps" size="3xl" color="gray" />
       </Button>

@@ -68,7 +68,7 @@ const NewDocumentSection = () => {
             rounded
             iconOnly
             ripple="dark"
-            className="border-0"
+            className="!border-0"
           >
             <Icon name="more_vert" size="3xl" color="gray" />
           </Button>

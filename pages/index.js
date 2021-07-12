@@ -12,7 +12,7 @@ const Home = () => {
   if (!session) return <Login />;
 
   return (
-    <div>
+    <>
       <Head>
         <title>Google Docs Clone</title>
         <link rel="icon" href="/favicon.png" />
@@ -23,7 +23,7 @@ const Home = () => {
       <NewDocumentSection />
 
       <DocumentsSection />
-    </div>
+    </>
   );
 };
 
