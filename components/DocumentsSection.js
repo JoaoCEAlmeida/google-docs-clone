@@ -1,6 +1,6 @@
 import Icon from "@material-tailwind/react/Icon";
 
-import { useCollectionOnce } from "react-firebase-hooks/firestore";
+import { useCollection } from "react-firebase-hooks/firestore";
 import db from "../firebase";
 import { useSession } from "next-auth/client";
 
@@ -9,7 +9,7 @@ import DocumentRow from "./DocumentRow";
 const DocumentsSection = () => {
   const [session] = useSession();
 
-  const [snapshot] = useCollectionOnce(
+  const [snapshot] = useCollection(
     db
       .collection("userDocs")
       .doc(session?.user?.email)
